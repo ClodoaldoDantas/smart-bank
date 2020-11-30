@@ -1,8 +1,8 @@
-import React from "react";
-import bank_logo from "../../assets/images/bank_logo.svg";
+import React from 'react';
+import bank_logo from '../../assets/images/bank_logo.svg';
 
 import styled from 'styled-components';
-import { corPrimaria } from "../../UI/variaveis";
+import { corPrimaria } from '../../UI/variaveis';
 
 const StyledHeader = styled.nav`
   background-color: ${corPrimaria};
@@ -11,12 +11,12 @@ const StyledHeader = styled.nav`
   padding: 0 15vw;
   height: 10vh;
   align-items: center;
-`
+`;
 
 const Logo = styled.img`
   height: 50px;
   width: 50px;
-`
+`;
 
 const BtnCabecalho = styled.a`
   text-align: center;
@@ -26,9 +26,9 @@ const BtnCabecalho = styled.a`
   font-weight: 600;
   border: 2px solid white;
 
-  background: ${props => props.primary ? 'white' : corPrimaria};
-  color: ${props => props.primary ? corPrimaria : 'white'};
-`
+  background: ${props => (props.primary ? 'white' : corPrimaria)};
+  color: ${props => (props.primary ? corPrimaria : 'white')};
+`;
 
 const Cabecalho = () => {
   return (
@@ -38,9 +38,7 @@ const Cabecalho = () => {
         <BtnCabecalho primary href="https://google.com">
           Ajuda
         </BtnCabecalho>
-        <BtnCabecalho href="https://google.com">
-          Sair
-        </BtnCabecalho>
+        <BtnCabecalho href="https://google.com">Sair</BtnCabecalho>
       </div>
     </StyledHeader>
   );

@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import Titulo from "../Titulo";
-import Conta from "../Conta";
+import Titulo from '../Titulo';
+import Conta from '../Conta';
 
 import styled from 'styled-components';
-import { fundoClaro } from '../../UI/variaveis'
+import { fundoClaro } from '../../UI/variaveis';
 
 const Container = styled.div`
   background-color: ${fundoClaro};
@@ -16,6 +16,10 @@ const Conteudo = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export default () => {
